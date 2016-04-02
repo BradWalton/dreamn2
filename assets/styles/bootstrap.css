@@ -1604,8 +1604,6 @@ pre code {
   }
 }
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -4496,7 +4494,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #F7D358;
+  background-color: #2E2E2E;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {

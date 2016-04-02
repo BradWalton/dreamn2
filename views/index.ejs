@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <!-- Creates the navbar -->
-  <nav class="navbar navbar-default navbar-inverse">
+  <nav class="navbar navbar-default">
     <!-- This creates the mechanism for collapse button -->
     <button type="button" class="navbar-toggle" data-toggle="collapse">
       <!-- This controls the number of lines in the image when the nav collapse -->
@@ -10,7 +10,7 @@
     </button>
 
     <!-- This is the brand on the left-hand side. -->
-    <a class="navbar-brand" href="/#"> DreamN :: Social Bookmarking</a>
+    <a class="navbar-brand" href="/#"> DreamN | Social Bookmarking</a>
     <div class="collapse navbar-collapse">
       <form class="navbar-form navbar-right">
         <div class="form-group">
@@ -26,70 +26,46 @@
       </form>
   </nav>
 </div>
-</div>
+
 
 
 <div class="formContainer">
   <form id="sign-up-form" class="form-signin" name="signup">
-    <h2 class="form-signin-heading">Create an account</h2>
+    <h2 class="form-signin-heading">Create An Account!</h2>
     <div class="row">
       <!-- N A M E -->
 
-      <!-- checking whether the form "signup" with the "name" property is both $invalid AND $dirty.  If it is
-      insert the "has-error" class on the input field (i.e. insert a red border)
-      -->
-      <div class="control-group form-group col-md-12"
-           ng-class="{'has-error':signup.name.$invalid &&
-                                signup.name.$dirty}">
-        <label>Your full name</label>
-
-        <!-- For this input field make it required, and have a min and max length -->
-        <input type="text" class="form-control" placeholder="e.g. Jon Snow" name="name" ng-model="signupForm.name" required>
-
-        <!-- Also, if signup.name.$dirty is true, show the message depending upon the particular properties truthiness (e.g. required
-        and/or minlength) -->
-      </div>
-
-      <!-- T I T L E -->
-
       <div class="control-group form-group col-md-12">
-        <label>Your title</label>
-        <input type="text" class="form-control" placeholder="e.g. Lord Commander, Night's Watch" name="title">
+        <label>Your Full Name:</label>
+        <input type="text" class="form-control" placeholder="e.g. Inigo Montoya" name="name">
       </div>
 
       <!-- E M A I L -->
 
-      <div class="control-group form-group col-md-12"
-           ng-class="{'has-error':signup.email.$invalid &&
-                                signup.email.$dirty}">
-        <label>Your email address</label>
-        <input type="email" class="form-control" placeholder="jon@winterfell.net" name="email">
+      <div class="control-group form-group col-md-12">
+        <label>Your email address:</label>
+        <input type="email" class="form-control" placeholder="you_killed_my_father@prepare_to.die" name="email">
       </div>
 
       <!-- P A S S W O R D -->
 
-      <div class="control-group form-group col-md-6"
-           ng-class="{'has-error':signup.password.$invalid &&
-                                signup.password.$dirty}">
-        <label>Choose a password</label>
-        <!-- Added the compareTo directive that compares the passowrds -->
-        <input type="password" class="form-control" placeholder="at least 6 characters" name="password" ng-model="signupForm.password" id="password" required ng-minlength="5" compare-to="signupForm.confirmPassword" >
+      <div class="control-group form-group col-md-6">
+        <label>Choose a Password:</label>
+        <input type="password" class="form-control" placeholder="At least 6 characters." name="password" id="password">
 
       </div>
 
       <!-- C O N F I R M  P A S S W O R D -->
 
       <div class="control-group form-group col-md-6">
-        <label>Re-enter your password</label>
-        <input type="password" class="form-control" placeholder="one more time" name="confirmation">
+        <label>Re-enter Your Password!</label>
+        <input type="password" class="form-control" placeholder="And again!" name="confirmation">
       </div>
     </div>
 
     <br/>
 
-    <!-- Disable signup button until the form has no errors -->
-    <button class="btn btn-primary btn-lg btn-block" type="submit">Start DreamN
-    </button>
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Start DreamN</button>
 
     <input type="hidden" name="_csrf" value="<%= _csrf %>" />
   </form>
