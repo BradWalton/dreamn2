@@ -2,7 +2,7 @@
   "name": "dreamn2",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "social book marking app",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
